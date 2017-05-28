@@ -6,7 +6,7 @@ The basic idea of this application is that we have implemented an Alexa voice as
 
 The application is built completely on Amazon Web Services. The services used are - 
 1. Amazon Developer Portal - This service is used to create and manipulate the custom Alexa skill. 
-2. AWS Lambda - This serves as the backend of the application.  
+2. AWS Lambda - This serves as the backend of the application. This is built using Node.js and SQL.
 3. AWS Relational Database Service - This is the database of the application. 
 4. AWS Beanstalk - The web application is hosted on Amazon Beanstalk for accessibility.
 
@@ -16,9 +16,12 @@ The application architecture includes a web application that is controlled by a 
 The queries are handled by a Lambda application on AWS. The endpoint of this Lambda application is mentioned in the skill so that whenever the patient queries the skill, it identifies the kind of query and directs it with metadata to the Lambda service. THe AWS Lambda service communicates with the database on AWS Relational Database Service and appropriately returns a response which is then returned by the Alexa skill. 
 
 The architecture of the entire application -
+<br><br>
 ![alt text](https://github.com/kevallakhani95/AlzheimerBuddy/blob/master/image1.jpeg)
 
-THe various kinds of information that the patient can query for are - 
+<br><br>
+
+The various kinds of information that the patient can query for are - 
 1. Location of objects - For eg. Wallet, Keys and more. The patient can also add or update an object if he wants to by merely communicating with the voice service. 
 2. Family information - For eg. Brother, Sister and more. The patient can ask for information regarding his/her family members (by name or by relation).
 3. Memories - The patient can ask for any memory related to any person in the database or even just ask for a memory and the application will return a random memory from the database. 
