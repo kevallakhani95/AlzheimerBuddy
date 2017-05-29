@@ -8,7 +8,7 @@ The application is built completely on Amazon Web Services. The services used ar
 1. Amazon Developer Portal - This service is used to create and manipulate the custom Alexa skill. 
 2. AWS Lambda - This serves as the backend of the application. This is built using Node.js and SQL.
 3. AWS Relational Database Service - This is the database of the application. 
-4. AWS Beanstalk - The web application is hosted on Amazon Beanstalk for accessibility.
+4. AWS Elastic Beanstalk - The web application is hosted on Amazon Beanstalk for accessibility.
 
 
 The application architecture includes a web application that is controlled by a member of the patients family who can add/update any information. The Alexa skill helps in communicating this information with the patient. The information that is updated by the member of the family is stored on an AWS Relational Database Service. The Alexa Skill is implemented on the Amazon Developer Portal. The interaction model, sample utterances, custom slots and everthing else related to the custom Alexa skill is implemented on the Amazon Developer Portal. 
