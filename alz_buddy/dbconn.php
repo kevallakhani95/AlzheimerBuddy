@@ -12,7 +12,7 @@
 // If any error in the connection file then Error is displayed
 
 
-$conn = mysqli_connect('mysqlforlambdatest.cxjr41nyvqjk.us-east-1.rds.amazonaws.com', 'keval','mypassword', 'alz_db', '3306');
+$conn = mysqli_connect(YOUR_ENDPOINT, YOUR_USERNAME, YOUR_PASSWORD, YOUR_DB_NAME, YOUR_PORT);
 
 if (!$conn) {
     die("Connection failed: " . $conn->connect_error);
