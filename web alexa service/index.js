@@ -3,7 +3,7 @@ const player = AVS.Player;
 
 const avs = new AVS({
   debug: true,
-  clientId: 'amzn1.application-oa2-client.696ab90fc5844fdbb8efc17394a79c00',
+  clientId: YOUR_CLIENT_ID,
   deviceId: 'test_device',
   deviceSerialNumber: 123,
   redirectUri: `https://${window.location.host}/authresponse`
