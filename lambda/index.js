@@ -9,12 +9,12 @@ exports.handler = (event, context) => {
     try {
 
         connection = mysql.createConnection({
-            host     : 'mysqlforlambdatest.cxjr41nyvqjk.us-east-1.rds.amazonaws.com',
-            user     : 'keval',
-            ssl : 'Amazon RDS',
-            password : 'mypassword',
-            database : 'alz_db',
-            port : '3306',
+            host     : YOUR_HOST_NAME,
+            user     : YOUR_USER_NAME,
+            ssl : YOUR_SSL_NAME,
+            password : YOUR_PASSWORD,
+            database : YOUR_DB_NAME,
+            port : YOUR_PORT_NUMBER,
         });
 
         if (event.session.new) {
