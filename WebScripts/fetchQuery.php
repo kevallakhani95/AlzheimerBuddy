@@ -1,8 +1,8 @@
 <?php
 header('Content-Type: application/json');
 
-$apiLink = "https://api.api.ai/v1/";
-$apiKey = "ae96553a8f294f088e44ae094ddb95c0";//$_GET['api'];
+$apiLink = YOUR_API_LINK;
+$apiKey = YOUR_API_KEY;//$_GET['api'];
 $query = "where is my book";
 $entityLink = $apiLink."query?v=20150910";
 
